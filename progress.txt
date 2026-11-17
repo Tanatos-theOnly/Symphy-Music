@@ -10,3 +10,8 @@ Started: 2026-11-17T22:03:00+05:30
   4. Analyzed PrismalAGSL architecture: 7 native AGSL shaders (`ambient_specular.agsl`, `default_specular.agsl`, `gradient_glass.agsl`, `press_ripple.agsl`, `rect_refraction.agsl`, `rect_refraction_dispersion.agsl`, `rounded_rect_sdf.agsl`), 3 platform tiers (Legacy API 25-30, Standard API 31-32, Liquid API 33+), ready-made components (`PrismalGlassBottomTabs`, `PrismalGlassSlider`, `PrismalGlassButton`, `PrismalGlassToggle`, etc.).
 - Evidence: Full codebase scan, grep analysis, and PRD.md initialization.
 - CodeRabbit Verdict: Pending first mutation.
+
+[2026-11-17 22:07] COMPLETED: Workspace Setup & Root Project Migration
+- Files: root project build files, composeApp/build.gradle.kts, settings.gradle.kts, prismal/*
+- Evidence: Project modules copied to root, settings.gradle.kts includes :prismal, composeApp androidMain references projects.prismal, git commit created.
+- CodeRabbit Verdict: Baseline committed.
