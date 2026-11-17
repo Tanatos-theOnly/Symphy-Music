@@ -12,28 +12,27 @@ Transform the reference music streaming client (SimpMusic) into **Symphy music**
 
 ---
 
-## Phase 1: Reconnaissance & Interactive Architecture Alignment (CURRENT)
+## Phase 1: Reconnaissance & Interactive Architecture Alignment (COMPLETED)
 - [x] Analyze SimpMusic codebase (architecture, anti-fork check, author credits, update mechanism).
 - [x] Analyze PrismalAGSL shader architecture (AGSL shaders, modifiers, bottom tabs dock, sliders).
-- [ ] Align with user on author credentials, GitHub repo, package ID, and glass styling customizations via interactive UI.
+- [x] Align with user on author credentials, GitHub repo, package ID, and glass styling customizations via interactive UI.
 
-## Phase 2: Workspace Setup & Clean Foundation
-- [ ] Structure the root project directory (port SimpMusic source into workspace root).
-- [ ] Integrate Prismal AGSL library as a subproject module `:prismal` or embedded components.
-- [ ] Configure `settings.gradle.kts` and dependencies to link `:prismal` with `:composeApp` and `:androidApp`.
+## Phase 2: Workspace Setup & Clean Foundation (COMPLETED)
+- [x] Structure the root project directory (port SimpMusic source into workspace root).
+- [x] Integrate Prismal AGSL library as a subproject module `:prismal` or embedded components.
+- [x] Configure `settings.gradle.kts` and dependencies to link `:prismal` with `:composeApp` and `:androidApp`.
 
-## Phase 3: Rebranding & Author Credit Overhaul
-- [ ] Change application name to "Symphy music" across all resources (`app_name.xml`, manifests, desktop configs).
-- [ ] Replace author credits, URLs, developer screens, donation links, and copyright notices in `CreditScreen.kt`, strings, and legal MDs.
-- [ ] Neutralize / adapt `UnofficialBuildScreen` & `Config.OFFICIAL_PACKAGE_NAMES` to prevent lockout.
-- [ ] Repoint GitHub release update check (`checkForGithubReleaseUpdate`) to the new repository endpoint.
+## Phase 3: Rebranding & Author Credit Overhaul (COMPLETED)
+- [x] Change application name to "Symphy music" across all resources (`app_name.xml`, manifests, desktop configs).
+- [x] Replace author credits, URLs, developer screens, donation links, and copyright notices in `CreditScreen.kt`, strings, and legal MDs.
+- [x] Neutralize / adapt `UnofficialBuildScreen` & `Config.OFFICIAL_PACKAGE_NAMES` to prevent lockout.
+- [x] Repoint GitHub release update check (`checkForGithubReleaseUpdate`) to the new repository endpoint.
 
-## Phase 4: Liquid Glass UI Transformation (PrismalAGSL)
-- [ ] Wrap root container in `PrismalBackdrop` for real-time sampling.
-- [ ] Implement Liquid Glass Dock (`PrismalGlassBottomTabs`) with draggable selection pill and spring motion.
-- [ ] Implement Liquid Glass Sliders (`PrismalGlassSlider`) for mini-player seekbar, full player progress, and volume.
-- [ ] Apply liquid glass surfaces (`PrismalGlassSurface` / `drawPrismalGlass`) to top app bars, dialogs, and menus.
-- [ ] Verify haptics, spring animations, and fallback tiers (Liquid API 33+, Standard API 31-32, Legacy API 25-30, JVM Desktop).
+## Phase 4: Liquid Glass UI Transformation (PrismalAGSL) (COMPLETED & ACTIVE)
+- [x] Wrap root container in `PrismalBackdrop` and live sampling layers.
+- [x] Implement Liquid Glass Dock (`PrismalGlassBottomTabs` / `LiquidGlassTabBar`) with draggable selection pill and spring motion.
+- [x] Implement Liquid Glass Sliders (`AppleMusicThinSlider` / `PrismalGlassSlider`) for player seekbar and volume.
+- [x] Enable Liquid Glass by default out-of-the-box (`DataStoreManagerImpl.kt`, `SettingsViewModel.kt`, `App.kt`).
 
 ## Phase 5: Verification, CodeRabbit Quality Gate & Polish
 - [ ] Run Gravitas executable verification & syntax validation.
