@@ -516,14 +516,21 @@ internal fun AppleMusicThinSlider(
                             .fillMaxWidth()
                             .height(trackHeight)
                             .clip(RoundedCornerShape(percent = 50))
-                            .background(AppleMusicTrackInactive),
+                            .background(Color.White.copy(alpha = 0.16f)),
                 ) {
                     Box(
                         modifier =
                             Modifier
                                 .fillMaxHeight()
                                 .fillMaxWidth(fraction)
-                                .background(activeColor),
+                                .background(
+                                    Brush.horizontalGradient(
+                                        colors = listOf(
+                                            activeColor.copy(alpha = 0.85f),
+                                            activeColor,
+                                        ),
+                                    ),
+                                ),
                     )
                 }
             },
