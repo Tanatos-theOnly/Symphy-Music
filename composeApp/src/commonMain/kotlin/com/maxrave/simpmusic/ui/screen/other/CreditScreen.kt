@@ -115,7 +115,7 @@ fun CreditScreen(
             textDecoration = TextDecoration.Underline,
             modifier =
                 Modifier.clickable {
-                    openUrl("https://github.com/Rohan-Dev")
+                    openUrl("https://github.com/Tanatos-theOnly")
                 },
         )
 
@@ -138,7 +138,7 @@ fun CreditScreen(
             // GitHub button
             TextButton(
                 onClick = {
-                    openUrl("https://github.com/Rohan-Dev/Symphy-Music")
+                    openUrl("https://github.com/Tanatos-theOnly/Symphy-Music")
                 },
                 modifier =
                     Modifier
@@ -152,7 +152,7 @@ fun CreditScreen(
             // Issue tracker button
             TextButton(
                 onClick = {
-                    openUrl("https://github.com/Rohan-Dev/Symphy-Music/issues")
+                    openUrl("https://github.com/Tanatos-theOnly/Symphy-Music/issues")
                 },
                 modifier =
                     Modifier
@@ -166,7 +166,7 @@ fun CreditScreen(
             // Support / Sponsor button
             TextButton(
                 onClick = {
-                    openUrl("https://github.com/sponsors/Rohan-Dev")
+                    openUrl("https://github.com/sponsors/Tanatos-theOnly")
                 },
                 modifier =
                     Modifier
